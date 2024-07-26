@@ -24,12 +24,12 @@ set_font() {
 if [ "$#" -gt 1 ]; then
 	choice=${!#}
 else
-	choice=$(gum choose "Hacker" "> Change size" "<< Back" --height 8 --header "Choose your programming font")
+	choice=$(gum choose "Hack" "> Change size" "<< Back" --height 8 --header "Choose your programming font")
 fi
 
 case $choice in
 "Hacker")
-	set_font "Hasklug Nerd Font" "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Hasklug.zip" "ttf"
+	set_font "Hack Nerd Font" "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Hack.zip" "ttf"
 	;;
 "> Change size")
 	source $OMAKUB_PATH/bin/omakub-sub/font-size.sh
